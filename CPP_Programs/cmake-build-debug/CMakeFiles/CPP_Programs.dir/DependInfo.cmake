@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/main.cpp" "/home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/cmake-build-debug/CMakeFiles/CPP_Programs.dir/main.cpp.o"
+  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/main.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/cmake-build-debug/CMakeFiles/CPP_Programs.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

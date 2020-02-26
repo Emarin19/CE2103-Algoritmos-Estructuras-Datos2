@@ -1,4 +1,4 @@
-# Install script for directory: /home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs
+# Install script for directory: /home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
