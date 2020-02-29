@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/emanuel/Desktop/Server/Util/TECList.cpp
+iostream
+-
+TECList.h
+/home/emanuel/Desktop/Server/Util/TECList.h
+
+/home/emanuel/Desktop/Server/Util/TECList.h
+iostream
+-
+
+/home/emanuel/Desktop/Server/Util/main.cpp
+iostream
+-
+TECList.cpp
+/home/emanuel/Desktop/Server/Util/TECList.cpp
+
