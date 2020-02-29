@@ -6,19 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.cpp
-Edge.h
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.h
-cstdlib
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/main.cpp
+iostream
 -
-ctime
--
-
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.h
-
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.cpp
-Graph.h
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.h
-
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.h
 

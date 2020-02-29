@@ -84,49 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Employee.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Employee.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Person.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Person.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Student.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Student.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.cpp">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.h">
-			<Option target="Server"/>
-		</Unit>
-		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/main.cpp">
+		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/main.cpp">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/CMakeLists.txt">

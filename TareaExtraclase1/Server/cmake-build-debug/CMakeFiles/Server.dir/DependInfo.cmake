@@ -4,14 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Employee.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Pruebas/Employee.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Person.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Pruebas/Person.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Pruebas/Student.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Pruebas/Student.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Util/Edge.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Util/Graph.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Util/Node.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Util/TECList.cpp.o"
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/main.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/Util/main.cpp.o"
+  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/main.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

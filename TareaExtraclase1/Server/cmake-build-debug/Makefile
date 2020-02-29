@@ -123,221 +123,32 @@ Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
-Pruebas/Employee.o: Pruebas/Employee.cpp.o
+main.o: main.cpp.o
 
-.PHONY : Pruebas/Employee.o
-
-# target to build an object file
-Pruebas/Employee.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Employee.cpp.o
-.PHONY : Pruebas/Employee.cpp.o
-
-Pruebas/Employee.i: Pruebas/Employee.cpp.i
-
-.PHONY : Pruebas/Employee.i
-
-# target to preprocess a source file
-Pruebas/Employee.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Employee.cpp.i
-.PHONY : Pruebas/Employee.cpp.i
-
-Pruebas/Employee.s: Pruebas/Employee.cpp.s
-
-.PHONY : Pruebas/Employee.s
-
-# target to generate assembly for a file
-Pruebas/Employee.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Employee.cpp.s
-.PHONY : Pruebas/Employee.cpp.s
-
-Pruebas/Person.o: Pruebas/Person.cpp.o
-
-.PHONY : Pruebas/Person.o
+.PHONY : main.o
 
 # target to build an object file
-Pruebas/Person.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Person.cpp.o
-.PHONY : Pruebas/Person.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-Pruebas/Person.i: Pruebas/Person.cpp.i
+main.i: main.cpp.i
 
-.PHONY : Pruebas/Person.i
-
-# target to preprocess a source file
-Pruebas/Person.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Person.cpp.i
-.PHONY : Pruebas/Person.cpp.i
-
-Pruebas/Person.s: Pruebas/Person.cpp.s
-
-.PHONY : Pruebas/Person.s
-
-# target to generate assembly for a file
-Pruebas/Person.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Person.cpp.s
-.PHONY : Pruebas/Person.cpp.s
-
-Pruebas/Student.o: Pruebas/Student.cpp.o
-
-.PHONY : Pruebas/Student.o
-
-# target to build an object file
-Pruebas/Student.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Student.cpp.o
-.PHONY : Pruebas/Student.cpp.o
-
-Pruebas/Student.i: Pruebas/Student.cpp.i
-
-.PHONY : Pruebas/Student.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Pruebas/Student.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Student.cpp.i
-.PHONY : Pruebas/Student.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-Pruebas/Student.s: Pruebas/Student.cpp.s
+main.s: main.cpp.s
 
-.PHONY : Pruebas/Student.s
-
-# target to generate assembly for a file
-Pruebas/Student.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Pruebas/Student.cpp.s
-.PHONY : Pruebas/Student.cpp.s
-
-Util/Edge.o: Util/Edge.cpp.o
-
-.PHONY : Util/Edge.o
-
-# target to build an object file
-Util/Edge.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Edge.cpp.o
-.PHONY : Util/Edge.cpp.o
-
-Util/Edge.i: Util/Edge.cpp.i
-
-.PHONY : Util/Edge.i
-
-# target to preprocess a source file
-Util/Edge.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Edge.cpp.i
-.PHONY : Util/Edge.cpp.i
-
-Util/Edge.s: Util/Edge.cpp.s
-
-.PHONY : Util/Edge.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Util/Edge.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Edge.cpp.s
-.PHONY : Util/Edge.cpp.s
-
-Util/Graph.o: Util/Graph.cpp.o
-
-.PHONY : Util/Graph.o
-
-# target to build an object file
-Util/Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Graph.cpp.o
-.PHONY : Util/Graph.cpp.o
-
-Util/Graph.i: Util/Graph.cpp.i
-
-.PHONY : Util/Graph.i
-
-# target to preprocess a source file
-Util/Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Graph.cpp.i
-.PHONY : Util/Graph.cpp.i
-
-Util/Graph.s: Util/Graph.cpp.s
-
-.PHONY : Util/Graph.s
-
-# target to generate assembly for a file
-Util/Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Graph.cpp.s
-.PHONY : Util/Graph.cpp.s
-
-Util/Node.o: Util/Node.cpp.o
-
-.PHONY : Util/Node.o
-
-# target to build an object file
-Util/Node.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Node.cpp.o
-.PHONY : Util/Node.cpp.o
-
-Util/Node.i: Util/Node.cpp.i
-
-.PHONY : Util/Node.i
-
-# target to preprocess a source file
-Util/Node.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Node.cpp.i
-.PHONY : Util/Node.cpp.i
-
-Util/Node.s: Util/Node.cpp.s
-
-.PHONY : Util/Node.s
-
-# target to generate assembly for a file
-Util/Node.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Node.cpp.s
-.PHONY : Util/Node.cpp.s
-
-Util/TECList.o: Util/TECList.cpp.o
-
-.PHONY : Util/TECList.o
-
-# target to build an object file
-Util/TECList.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/TECList.cpp.o
-.PHONY : Util/TECList.cpp.o
-
-Util/TECList.i: Util/TECList.cpp.i
-
-.PHONY : Util/TECList.i
-
-# target to preprocess a source file
-Util/TECList.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/TECList.cpp.i
-.PHONY : Util/TECList.cpp.i
-
-Util/TECList.s: Util/TECList.cpp.s
-
-.PHONY : Util/TECList.s
-
-# target to generate assembly for a file
-Util/TECList.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/TECList.cpp.s
-.PHONY : Util/TECList.cpp.s
-
-Util/main.o: Util/main.cpp.o
-
-.PHONY : Util/main.o
-
-# target to build an object file
-Util/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/main.cpp.o
-.PHONY : Util/main.cpp.o
-
-Util/main.i: Util/main.cpp.i
-
-.PHONY : Util/main.i
-
-# target to preprocess a source file
-Util/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/main.cpp.i
-.PHONY : Util/main.cpp.i
-
-Util/main.s: Util/main.cpp.s
-
-.PHONY : Util/main.s
-
-# target to generate assembly for a file
-Util/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/main.cpp.s
-.PHONY : Util/main.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -348,30 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Server"
 	@echo "... edit_cache"
-	@echo "... Pruebas/Employee.o"
-	@echo "... Pruebas/Employee.i"
-	@echo "... Pruebas/Employee.s"
-	@echo "... Pruebas/Person.o"
-	@echo "... Pruebas/Person.i"
-	@echo "... Pruebas/Person.s"
-	@echo "... Pruebas/Student.o"
-	@echo "... Pruebas/Student.i"
-	@echo "... Pruebas/Student.s"
-	@echo "... Util/Edge.o"
-	@echo "... Util/Edge.i"
-	@echo "... Util/Edge.s"
-	@echo "... Util/Graph.o"
-	@echo "... Util/Graph.i"
-	@echo "... Util/Graph.s"
-	@echo "... Util/Node.o"
-	@echo "... Util/Node.i"
-	@echo "... Util/Node.s"
-	@echo "... Util/TECList.o"
-	@echo "... Util/TECList.i"
-	@echo "... Util/TECList.s"
-	@echo "... Util/main.o"
-	@echo "... Util/main.i"
-	@echo "... Util/main.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

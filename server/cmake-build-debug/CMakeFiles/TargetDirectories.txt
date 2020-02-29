@@ -1,3 +1,0 @@
-/home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/server/cmake-build-debug/CMakeFiles/server.dir
-/home/emarin/Desktop/CE2103-Algoritmos-Estructuras-Datos2/server/cmake-build-debug/CMakeFiles/edit_cache.dir
