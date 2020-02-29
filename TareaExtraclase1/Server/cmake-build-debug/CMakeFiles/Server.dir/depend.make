@@ -14,6 +14,9 @@ CMakeFiles/Server.dir/Pruebas/Student.cpp.o: ../Pruebas/Student.h
 CMakeFiles/Server.dir/Util/Edge.cpp.o: ../Util/Edge.cpp
 CMakeFiles/Server.dir/Util/Edge.cpp.o: ../Util/Edge.h
 
+CMakeFiles/Server.dir/Util/Graph.cpp.o: ../Util/Graph.cpp
+CMakeFiles/Server.dir/Util/Graph.cpp.o: ../Util/Graph.h
+
 CMakeFiles/Server.dir/Util/Node.cpp.o: ../Util/Node.cpp
 CMakeFiles/Server.dir/Util/Node.cpp.o: ../Util/Node.h
 

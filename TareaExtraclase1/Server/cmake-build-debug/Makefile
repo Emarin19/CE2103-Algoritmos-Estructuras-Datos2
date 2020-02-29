@@ -231,6 +231,33 @@ Util/Edge.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Edge.cpp.s
 .PHONY : Util/Edge.cpp.s
 
+Util/Graph.o: Util/Graph.cpp.o
+
+.PHONY : Util/Graph.o
+
+# target to build an object file
+Util/Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Graph.cpp.o
+.PHONY : Util/Graph.cpp.o
+
+Util/Graph.i: Util/Graph.cpp.i
+
+.PHONY : Util/Graph.i
+
+# target to preprocess a source file
+Util/Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Graph.cpp.i
+.PHONY : Util/Graph.cpp.i
+
+Util/Graph.s: Util/Graph.cpp.s
+
+.PHONY : Util/Graph.s
+
+# target to generate assembly for a file
+Util/Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Util/Graph.cpp.s
+.PHONY : Util/Graph.cpp.s
+
 Util/Node.o: Util/Node.cpp.o
 
 .PHONY : Util/Node.o
@@ -333,6 +360,9 @@ help:
 	@echo "... Util/Edge.o"
 	@echo "... Util/Edge.i"
 	@echo "... Util/Edge.s"
+	@echo "... Util/Graph.o"
+	@echo "... Util/Graph.i"
+	@echo "... Util/Graph.s"
 	@echo "... Util/Node.o"
 	@echo "... Util/Node.i"
 	@echo "... Util/Node.s"

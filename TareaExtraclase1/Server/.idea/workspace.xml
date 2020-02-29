@@ -12,9 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6d248bd-bdd0-4180-8be2-2cb53fbc8bb6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Util/Graph.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Util/Graph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util/Edge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Util/Edge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util/Edge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Util/Edge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Util/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/Util/Edge.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/Util/Edge.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +101,7 @@
       <workItem from="1582958267999" duration="2992000" />
       <workItem from="1582987102914" duration="3749000" />
       <workItem from="1582991225569" duration="976000" />
+      <workItem from="1582992311274" duration="1453000" />
     </task>
     <servers />
   </component>
@@ -94,22 +113,22 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="417" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.732@0.0.1366.732" timestamp="1582942348044" />
-    <state width="1320" height="215" key="GridCell.Tab.0.bottom" timestamp="1582990947376">
+    <state width="1320" height="186" key="GridCell.Tab.0.bottom" timestamp="1582993771020">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="215" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1582990947376" />
-    <state width="1320" height="215" key="GridCell.Tab.0.center" timestamp="1582990947374">
+    <state width="1320" height="186" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1582993771019" />
+    <state width="1320" height="186" key="GridCell.Tab.0.center" timestamp="1582993771019">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="215" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1582990947374" />
-    <state width="1320" height="215" key="GridCell.Tab.0.left" timestamp="1582990947373">
+    <state width="1320" height="186" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1582993771019" />
+    <state width="1320" height="186" key="GridCell.Tab.0.left" timestamp="1582993771018">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="215" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1582990947373" />
-    <state width="1320" height="215" key="GridCell.Tab.0.right" timestamp="1582990947376">
+    <state width="1320" height="186" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1582993771018" />
+    <state width="1320" height="186" key="GridCell.Tab.0.right" timestamp="1582993771019">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="215" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1582990947376" />
+    <state width="1320" height="186" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1582993771019" />
     <state width="1320" height="215" key="GridCell.Tab.1.bottom" timestamp="1582990947378">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -130,5 +149,9 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="362" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1582987109612" />
+    <state x="428" y="8" key="refactoring.ChangeSignatureDialog" timestamp="1582993168593">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="428" y="8" key="refactoring.ChangeSignatureDialog/0.0.1366.732@0.0.1366.732" timestamp="1582993168593" />
   </component>
 </project>

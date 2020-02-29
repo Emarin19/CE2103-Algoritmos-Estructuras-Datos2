@@ -32,9 +32,6 @@ int main(int argc, char **argv) {
     }
     cout<<list.size()<<endl;*/
 
-    Node<string> node("hOLA");
-    cout<<node.getID()<<endl;
-    cout<<node.getEntity()<<endl;
 
     return 0;
 

@@ -108,6 +108,12 @@
 		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.h">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp">
 			<Option target="Server"/>
 		</Unit>

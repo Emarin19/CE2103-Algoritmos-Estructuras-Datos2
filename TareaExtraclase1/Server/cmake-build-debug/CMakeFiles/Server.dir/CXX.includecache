@@ -6,33 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.cpp
+Edge.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.h
 cstdlib
 -
 ctime
 -
-Node.h
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.h
 
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Edge.h
 
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.cpp
-iostream
--
-TECList.h
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.cpp
+Graph.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.h
 
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.h
-iostream
--
-
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/main.cpp
-TECList.cpp
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.cpp
-Node.cpp
-/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp
-cstdlib
--
-ctime
--
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Graph.h
 
