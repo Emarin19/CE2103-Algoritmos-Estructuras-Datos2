@@ -1,9 +1,13 @@
-#include <iostream>
+
 #include "TECList.cpp"
+#include "Node.cpp"
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main(int argc, char **argv) {
-    TECList<int> list;
+    srand(time(0));
+    /*TECList<int> list;
     for(int i=1; i<=10; i++){
         list.add(i);
     }
@@ -26,9 +30,12 @@ int main(int argc, char **argv) {
     for(unsigned int i=0; i<list.size(); i++){
         list.remove(i);
     }
-    cout<<list.size()<<endl;
+    cout<<list.size()<<endl;*/
 
-
+    Node<string> node("hOLA");
+    cout<<node.getID()<<endl;
+    cout<<node.getEntity()<<endl;
 
     return 0;
+
 }

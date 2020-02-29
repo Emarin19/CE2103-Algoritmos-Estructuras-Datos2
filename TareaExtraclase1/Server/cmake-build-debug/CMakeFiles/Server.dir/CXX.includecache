@@ -6,19 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/emanuel/Desktop/Server/Util/TECList.cpp
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp
+cstdlib
+-
+ctime
+-
+Node.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.h
+
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.h
+
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.cpp
 iostream
 -
 TECList.h
-/home/emanuel/Desktop/Server/Util/TECList.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.h
 
-/home/emanuel/Desktop/Server/Util/TECList.h
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.h
 iostream
 -
 
-/home/emanuel/Desktop/Server/Util/main.cpp
-iostream
--
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/main.cpp
 TECList.cpp
-/home/emanuel/Desktop/Server/Util/TECList.cpp
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/TECList.cpp
+Node.cpp
+/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/Util/Node.cpp
+cstdlib
+-
+ctime
+-
 

@@ -11,9 +11,17 @@ CMakeFiles/Server.dir/Pruebas/Student.cpp.o: ../Pruebas/Person.h
 CMakeFiles/Server.dir/Pruebas/Student.cpp.o: ../Pruebas/Student.cpp
 CMakeFiles/Server.dir/Pruebas/Student.cpp.o: ../Pruebas/Student.h
 
+CMakeFiles/Server.dir/Util/Edge.cpp.o: ../Util/Edge.cpp
+CMakeFiles/Server.dir/Util/Edge.cpp.o: ../Util/Edge.h
+
+CMakeFiles/Server.dir/Util/Node.cpp.o: ../Util/Node.cpp
+CMakeFiles/Server.dir/Util/Node.cpp.o: ../Util/Node.h
+
 CMakeFiles/Server.dir/Util/TECList.cpp.o: ../Util/TECList.cpp
 CMakeFiles/Server.dir/Util/TECList.cpp.o: ../Util/TECList.h
 
+CMakeFiles/Server.dir/Util/main.cpp.o: ../Util/Node.cpp
+CMakeFiles/Server.dir/Util/main.cpp.o: ../Util/Node.h
 CMakeFiles/Server.dir/Util/main.cpp.o: ../Util/TECList.cpp
 CMakeFiles/Server.dir/Util/main.cpp.o: ../Util/TECList.h
 CMakeFiles/Server.dir/Util/main.cpp.o: ../Util/main.cpp
