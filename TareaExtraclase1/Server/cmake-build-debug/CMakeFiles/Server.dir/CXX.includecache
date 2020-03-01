@@ -9,4 +9,12 @@
 /home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/main.cpp
 iostream
 -
+fstream
+-
+vector
+-
+sstream
+-
+string
+-
 

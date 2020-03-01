@@ -1,4 +1,9 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <sstream>
+#include <string>
+
 using namespace std;
 
 /*############## TECList class definition ################*/
@@ -245,22 +250,22 @@ public:
     static int randomID;
     Edge();
     Edge(int id);
-    Edge(int startNode, int endNode, int weight);
+    Edge(Node<string> startNode, Node<string> endNode, int weight);
     ~Edge();
     void setID(int id);
     int getID();
     int generateID();
-    void setStartNode(int startNode);
-    int getStartNode();
-    void setEndNode(int endNode);
-    int getEndNode();
+    void setStartNode(Node<string>);
+    Node<string> getStartNode();
+    void setEndNode(Node<string>);
+    Node<string> getEndNode();
     void setWeight(int weight);
     int getWeight();
 
 private:
     int id;
-    int startNode;
-    int endNode;
+    Node<string> startNode;
+    Node<string> endNode;
     int weight;
 };
 
@@ -268,17 +273,14 @@ private:
 int Edge::randomID = 2000;
 
 Edge::Edge() {
-    srand(time(0));
     this->id = randomID++;
 }
 
 Edge::Edge(int id) {
-    srand(time(0));
     this->id = id;
 }
 
-Edge::Edge(int startNode, int endNode, int weight) {
-    srand(time(0));
+Edge::Edge(Node<string> startNode, Node<string> endNode, int weight) {
     this->id = generateID();
     this->startNode = startNode;
     this->endNode = endNode;
@@ -299,19 +301,19 @@ int Edge::generateID() {
     return randomID++;
 }
 
-void Edge::setStartNode(int startNode) {
+void Edge::setStartNode(Node<string> startNode) {
     this->startNode = startNode;
 }
 
-int Edge::getStartNode() {
+Node<string> Edge::getStartNode() {
     return startNode;
 }
 
-void Edge::setEndNode(int endNode) {
+void Edge::setEndNode(Node<string> endNode) {
     this->endNode = endNode;
 }
 
-int Edge::getEndNode() {
+Node<string> Edge::getEndNode() {
     return endNode;
 }
 
@@ -397,45 +399,57 @@ TECList<Edge> * Graph::getEdges() {
     return edges;
 }
 
+void loadGraph(Graph &);
 
 int main() {
-    TECList<int> list;
-    for(int i=1; i<=10; i++){
-        list.add(i*5);
-    }
-
-    for(int i=0; i<list.size(); i++){
-        cout<<list.get(i)<<" ";
-    }
-    cout<<"\n\n";
-
-    Node<string> node1("Cel1");
-    Node<string> node2("Cel2");
-    cout<<"Node1 ID: "<<node1.getID()<<endl;
-    cout<<"Node1 entity: "<<node1.getEntity()<<endl;
-    cout<<"Node2 ID: "<<node2.getID()<<endl;
-    cout<<"Node2 entity: "<<node2.getEntity()<<endl;
-    cout<<"\n\n";
-
-    Edge edge1(node1.getID(), node2.getID(), 12);
-    cout<<"AristaID: "<<edge1.getID()<<" "<<"startNodeID: "<<edge1.getStartNode()<<" -> endNodeID: "<<edge1.getEndNode()<<endl;
-    cout<<"\n\n";
-
     Graph graph;
-    graph.addNode(node1);
-    graph.addNode(node2);
-    graph.addEdge(edge1);
-    cout<<"Node list size: "<<graph.getNodes()->size()<<endl;
-    cout<<"Edge list size: "<<graph.getEdges()->size()<<endl;
-    Node<string> nodegraph1 = graph.getNodes()->get(0);
-    Node<string> nodegraph2 = graph.getNodes()->get(1);
-    Edge edgegraph = graph.getEdges()->get(0);
-    cout<<"Node graph1: "<<nodegraph1.getEntity()<<" ID: "<<nodegraph1.getID()<<endl;
-    cout<<"Node graph2: "<<nodegraph1.getEntity()<<" ID: "<<nodegraph2.getID()<<endl;
-    cout<<"Arista weight: "<<edgegraph.getWeight()<<endl;
+    loadGraph(graph);
 
+    cout<<"Nodes: "<<graph.getNodes()->size()<<endl;
+    cout<<"Edges: "<<graph.getEdges()->size()<<endl;
+    for(int i=0; i<graph.getNodes()->size(); i++){
+        cout<<graph.getNodes()->get(i).getEntity()<<" ";
+    }
+    cout<<endl;
+
+    for(int i=0; i<graph.getEdges()->size(); i++){
+        cout<<"start: "<<graph.getEdges()->get(i).getStartNode().getEntity()
+        <<", end: "<<graph.getEdges()->get(i).getEndNode().getEntity()<<", weight: "
+        <<graph.getEdges()->get(i).getWeight()<<endl;
+    }
 
     return 0;
+}
+
+
+void loadGraph(Graph &graph){
+    fstream file;
+    file.open("GraphFile",ios::in);
+
+    if(file.fail()){
+        cout<<"File not found"<<endl;
+        return;
+    }
+
+    string line, word;
+    vector<string> words;
+    while(getline(file,line)){
+        words.clear();
+        stringstream s(line);
+
+        while(getline(s,word,',')){
+            words.push_back(word);
+        }
+
+        Node<string> startNode(words[0]);
+        Node<string> endNode(words[1]);
+        Edge edge(startNode, endNode, stoi(words[2]));
+
+        graph.addNode(startNode);
+        graph.addNode(endNode);
+        graph.addEdge(edge);
+    }
+    file.close();
 }
 
 
