@@ -3,8 +3,11 @@
 #include <vector>
 #include <sstream>
 #include <string>
+#include <map>
+#include <unordered_map>
 
 using namespace std;
+
 
 /*############## TECList class definition ################*/
 template <class T>
@@ -179,7 +182,6 @@ bool TECList<T>::isEmpty() {
     return first == NULL && last == NULL;
 }
 
-
 /*############## Node class definition ################*/
 template <class T>
 class Node{
@@ -193,10 +195,13 @@ public:
     int generateID();
     void setEntity(T);
     T getEntity();
+    void setVisited(bool);
+    bool isVisited();
 
 private:
     int ID;
     T entity;
+    bool visited;
 };
 
 /*############## Node class implementation ################*/
@@ -244,6 +249,16 @@ T Node<T>::getEntity() {
     return entity;
 }
 
+template <class T>
+void Node<T>::setVisited(bool visited) {
+    this->visited = visited;
+}
+
+template <class T>
+bool Node<T>::isVisited() {
+    return visited;
+}
+
 /*############## Edge class definition ################*/
 class Edge{
 public:
@@ -259,7 +274,7 @@ public:
     Node<string> getStartNode();
     void setEndNode(Node<string>);
     Node<string> getEndNode();
-    void setWeight(int weight);
+    void setWeight(int _weight);
     int getWeight();
 
 private:
@@ -317,8 +332,8 @@ Node<string> Edge::getEndNode() {
     return endNode;
 }
 
-void Edge::setWeight(int weight) {
-    this->weight = weight;
+void Edge::setWeight(int _weight) {
+    weight = _weight;
 }
 
 int Edge::getWeight() {
@@ -340,6 +355,8 @@ public:
     void addEdge(Edge edge);
     void addEdges(TECList<Edge> *edges);
     TECList<Edge> *getEdges();
+    bool containsNode(Node<string> &);
+    bool containsEdge(Edge &);
 
 private:
     int id;
@@ -372,7 +389,13 @@ int Graph::generateID() {
 }
 
 void Graph::addNode(Node<string> node) {
-    nodes->add(node);
+    //cout<<"El resultado de contains entonces es: "<<containsNode(node)<<endl;
+    if(containsNode(node) == false){
+        nodes->add(node);
+    }
+    else{
+        cout<<node.getEntity()<<" ya existe"<<endl;
+    }
 }
 
 void Graph::addNodes(TECList<Node<string> > *nodes) {
@@ -386,7 +409,13 @@ TECList<Node<std::string> > * Graph::getNodes() {
 }
 
 void Graph::addEdge(Edge edge) {
-    edges->add(edge);
+    if(containsEdge(edge) == false){
+        edges->add(edge);
+    }
+    else{
+        cout<<"Edge ya existe"<<endl;
+    }
+
 }
 
 void Graph::addEdges(TECList<Edge> *edges) {
@@ -399,28 +428,262 @@ TECList<Edge> * Graph::getEdges() {
     return edges;
 }
 
+bool Graph::containsNode(Node<string> &node) {
+    bool result = false;
+    for(int i=0; i<nodes->size(); i++){
+        if((nodes->get(i).getEntity().compare(node.getEntity())) == 0){
+            cout<<nodes->get(i).getEntity()<<" es igual a "<<node.getEntity()<<endl;
+            result = true;
+            break;
+        }
+    }
+    return result;
+}
+
+bool Graph::containsEdge(Edge &edge) {
+    bool result = false;
+    for(int i=0; i<edges->size(); i++){
+        if((edges->get(i).getStartNode().getEntity().compare(edge.getStartNode().getEntity())) == 0){
+            if((edges->get(i).getEndNode().getEntity().compare(edge.getEndNode().getEntity())) == 0){
+                cout<<"Edges iguales"<<endl;
+                edges->get(i).setWeight(120);
+                cout<<"Peso arista: "<<edges->get(i).getWeight()<<endl;
+                result = true;
+                break;
+            }
+            else{
+                continue;
+            }
+        }
+    }
+    return result;
+}
+
+/*############## ShortestPath class definition ################*/
+class ShortestPath {
+public:
+    ShortestPath();
+    ShortestPath(double, TECList<Node<string>> *);
+    ~ShortestPath();
+    void setPath(TECList<Node<string>> *);
+    TECList<Node<string>>* getPath();
+    void setDuration(double);
+    double getDuration();
+
+private:
+    double duration;
+    TECList<Node<string>> *path;
+};
+
+/*############## ShortestPath class implementation ################*/
+ShortestPath::ShortestPath() {
+    duration = 0.0;
+    path = new TECList<Node<string>>();
+}
+
+ShortestPath::ShortestPath(double duration, TECList<Node<string>> *path) {
+    this->duration = duration;
+    this->path = path;
+}
+
+ShortestPath::~ShortestPath() {}
+
+void ShortestPath::setPath(TECList<Node<string>> *path) {
+    this->path = path;
+}
+
+TECList<Node<string>> * ShortestPath::getPath() {
+    return path;
+}
+
+void ShortestPath::setDuration(double duration) {
+    this->duration = duration;
+}
+
+double ShortestPath::getDuration() {
+    return duration;
+}
+
+/*############## Dijkstra class definition ################*/
+class Dijkstra{
+public:
+    Dijkstra(Graph *);
+    ~Dijkstra();
+    TECList<Node<string>>* DijkstraShortestPath(Edge path);
+    Node<string> closestReachableUnvisited(unordered_map<string, double>);
+
+private:
+    Graph *parentGraph;
+};
+
+/*############## Dijkstra class implementation ################*/
+Dijkstra::Dijkstra(Graph *graph) {
+    parentGraph = graph;
+}
+
+Dijkstra::~Dijkstra() {}
+
+TECList<Node<string>> * Dijkstra::DijkstraShortestPath(Edge path) {
+    TECList<Node<string>> *paths = new TECList<Node<string>>();
+    Node<string> start = path.getStartNode();
+    Node<string> end = path.getEndNode();
+    Node<string> myNull("NULL");
+    if (start.getEntity()!=""  && end.getEntity()!=""){
+        for(int i=0; i<parentGraph->getNodes()->size(); i++){
+            parentGraph->getNodes()->get(i).setVisited(false);
+        }
+        unordered_map<string, string> changedAt;
+        changedAt[start.getEntity()] = myNull.getEntity();
+        //changedAt[start.getEntity()] = myNull;
+        //changedAt.insert(pair<string, string>(start.getEntity(), myNull.getEntity()));
+
+        unordered_map<string, double> shortestPathMap;
+        for(int i=0; i<parentGraph->getNodes()->size(); i++){
+            Node<string> node = parentGraph->getNodes()->get(i);
+            if(node.getEntity() == start.getEntity()){
+                //shortestPathMap[start.getEntity()] = 0.0;
+                //shortestPathMap.insert(pair<string, double>(start.getEntity(), 0.0));
+                shortestPathMap[start.getEntity()] = 0.0;
+            }
+            else{
+                //shortestPathMap[node.getEntity()] = 1.79769e+308;
+                //shortestPathMap.insert(pair<string, double>(node.getEntity(), 12.6897));
+                shortestPathMap[node.getEntity()] = 1.79769e+308;
+            }
+        }
+
+        for(int i=0; i<parentGraph->getEdges()->size(); i++){
+            Node<string> s = parentGraph->getEdges()->get(i).getStartNode();
+            Node<string> e = parentGraph->getEdges()->get(i).getEndNode();
+
+            if((s.getEntity().compare(start.getEntity())) == 0){
+                //shortestPathMap[e.getEntity()] = parentGraph->getEdges()->get(i).getWeight();
+                //changedAt[e.getEntity()] = start;
+                //shortestPathMap.insert(pair<string, double>(e.getEntity(), parentGraph->getEdges()->get(i).getWeight()));
+                shortestPathMap[e.getEntity()] = parentGraph->getEdges()->get(i).getWeight();
+                //changedAt.insert(pair<string, string>(e.getEntity(), start.getEntity()));
+                changedAt[e.getEntity()] = start.getEntity();
+            }
+        }
+        start.setVisited(true);
+
+        while(true){
+            Node<string> currentNode = closestReachableUnvisited(shortestPathMap);
+            if((currentNode.getEntity().compare("NULL")) == 0){
+                return NULL;
+            }
+
+            if((currentNode.getEntity().compare(end.getEntity()))){
+                Node<string> child = end;
+                //TECList<Node<string>> *paths = new TECList<Node<string>>();
+                cout<<"end entity: "<<end.getEntity()<<endl;
+                paths->add(end);
+
+                while(true){
+                    Node<string> parent(changedAt[child.getEntity()]);
+                    if(parent.getEntity().compare("NULL")){
+                        break;
+                    }
+                    cout<<"parent entity: "<<parent.getEntity()<<endl;
+                    paths->add(parent);
+                    child = parent;
+                }
+                cout<<"Total weight: "<<shortestPathMap[end.getEntity()]<<endl;
+                return paths;
+            }
+            currentNode.setVisited(true);
+
+            for(int i=0; i<parentGraph->getEdges()->size(); i++){
+                Node<string> s = parentGraph->getEdges()->get(i).getStartNode();
+                Node<string> e = parentGraph->getEdges()->get(i).getEndNode();
+                if(s.getEntity()==currentNode.getEntity()){
+                    if(e.isVisited()){
+                        continue;
+                    }
+                    if(shortestPathMap[currentNode.getEntity()] + parentGraph->getEdges()->get(i).getWeight() <
+                    shortestPathMap[e.getEntity()]){
+                        //shortestPathMap[e.getEntity()] = shortestPathMap[currentNode.getEntity()] + parentGraph->getEdges()->get(i).getWeight();
+                        //changedAt[e.getEntity()] = s;
+                        //shortestPathMap.insert(pair<string, double>(e.getEntity(), shortestPathMap[currentNode.getEntity()] +
+                        //parentGraph->getEdges()->get(i).getWeight()));
+                        shortestPathMap[e.getEntity()] = shortestPathMap[currentNode.getEntity()] + parentGraph->getEdges()->get(i).getWeight();
+
+                        changedAt[e.getEntity()] = s.getEntity();
+                    }
+                }
+            }
+        }
+    }
+    cout<<"Error"<<endl;
+}
+
+Node<string> Dijkstra::closestReachableUnvisited(unordered_map<string, double> shortestPathMap) {
+    double shortestDistance = 1.79769e+308;
+    Node<string> closestReachableNode("NULL");
+    for(int i=0; i<parentGraph->getNodes()->size(); i++){
+        Node<string> node = parentGraph->getNodes()->get(i);
+        if(node.isVisited()){
+            continue;
+        }
+
+        double currentDistance = shortestPathMap[node.getEntity()];
+        if(currentDistance == 1.79769e+308){
+            continue;
+        }
+
+        if(currentDistance < shortestDistance){
+            shortestDistance = currentDistance;
+            closestReachableNode = node;
+        }
+    }
+    return closestReachableNode;
+}
+
 void loadGraph(Graph &);
 
 int main() {
+    string n1 = "Maria";
+    string n2 = "Maria";
+    cout<<"Comparación entre n1 y n2 es: "<<n1.compare(n2)<<endl;
+    Node<string> a("Emanuel");
+    Node<string> b = a;
+    cout<<"Nodo a entity: "<<a.getEntity()<<endl;
+    cout<<"Nodo a ID: "<<a.getID()<<endl;
+    cout<<"Nodo b entity: "<<b.getEntity()<<endl;
+    cout<<"Nodo b ID: "<<b.getID()<<endl;
     Graph graph;
     loadGraph(graph);
 
-    cout<<"Nodes: "<<graph.getNodes()->size()<<endl;
-    cout<<"Edges: "<<graph.getEdges()->size()<<endl;
+    cout<<"Nodes size: "<<graph.getNodes()->size()<<endl;
+    cout<<"Edges size: "<<graph.getEdges()->size()<<endl;
+    cout<<"\nImprimiendo todos los nodos:"<<endl;
     for(int i=0; i<graph.getNodes()->size(); i++){
         cout<<graph.getNodes()->get(i).getEntity()<<" ";
     }
-    cout<<endl;
+    cout<<"\n"<<endl;
 
+    cout<<"Imprimieno todas las aristas:"<<endl;
     for(int i=0; i<graph.getEdges()->size(); i++){
         cout<<"start: "<<graph.getEdges()->get(i).getStartNode().getEntity()
         <<", end: "<<graph.getEdges()->get(i).getEndNode().getEntity()<<", weight: "
         <<graph.getEdges()->get(i).getWeight()<<endl;
     }
 
+    Dijkstra dijkstra(&graph);
+    Edge vertices;
+    cout<<"\nNodos por buscar: ";
+    cout<<graph.getNodes()->get(0).getEntity()<<" y ";
+    cout<<graph.getNodes()->get(4).getEntity()<<endl;
+
+    vertices.setStartNode(graph.getNodes()->get(0));
+    vertices.setEndNode(graph.getNodes()->get(4));
+    TECList<Node<string>> *paths = dijkstra.DijkstraShortestPath(vertices);
+    cout<<"Path size: "<<paths->size()<<endl;
+    cout<<paths->get(0).getEntity()<<endl;
+    cout<<paths->get(1).getEntity()<<endl;
+
     return 0;
 }
-
 
 void loadGraph(Graph &graph){
     fstream file;
