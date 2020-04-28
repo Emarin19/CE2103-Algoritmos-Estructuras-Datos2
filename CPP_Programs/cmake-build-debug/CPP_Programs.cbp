@@ -87,6 +87,12 @@
 		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/main.cpp">
 			<Option target="CPP_Programs"/>
 		</Unit>
+		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp">
+			<Option target="CPP_Programs"/>
+		</Unit>
+		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.h">
+			<Option target="CPP_Programs"/>
+		</Unit>
 		<Unit filename="/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/CPP_Programs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

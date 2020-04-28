@@ -1,0 +1,3 @@
+/home/emanuel/Desktop/AbstractFactory_DesignPattern/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/emanuel/Desktop/AbstractFactory_DesignPattern/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/emanuel/Desktop/AbstractFactory_DesignPattern/cmake-build-debug/CMakeFiles/AbstractFactory_DesignPattern.dir

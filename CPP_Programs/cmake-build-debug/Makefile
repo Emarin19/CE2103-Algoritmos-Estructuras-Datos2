@@ -123,6 +123,33 @@ CPP_Programs/fast:
 	$(MAKE) -f CMakeFiles/CPP_Programs.dir/build.make CMakeFiles/CPP_Programs.dir/build
 .PHONY : CPP_Programs/fast
 
+home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.o: home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.o
+
+.PHONY : home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.o
+
+# target to build an object file
+home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.o:
+	$(MAKE) -f CMakeFiles/CPP_Programs.dir/build.make CMakeFiles/CPP_Programs.dir/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.o
+.PHONY : home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.o
+
+home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.i: home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.i
+
+.PHONY : home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.i
+
+# target to preprocess a source file
+home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.i:
+	$(MAKE) -f CMakeFiles/CPP_Programs.dir/build.make CMakeFiles/CPP_Programs.dir/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.i
+.PHONY : home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.i
+
+home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.s: home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.s
+
+.PHONY : home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.s
+
+# target to generate assembly for a file
+home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.s:
+	$(MAKE) -f CMakeFiles/CPP_Programs.dir/build.make CMakeFiles/CPP_Programs.dir/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.s
+.PHONY : home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CPP_Programs"
+	@echo "... home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.o"
+	@echo "... home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.i"
+	@echo "... home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase2/hello.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

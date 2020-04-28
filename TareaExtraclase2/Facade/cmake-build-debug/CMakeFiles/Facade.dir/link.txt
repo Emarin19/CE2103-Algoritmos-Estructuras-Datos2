@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Facade.dir/TestBankAccount.cpp.o CMakeFiles/Facade.dir/Sources/WelcomeToBank.cpp.o CMakeFiles/Facade.dir/Sources/AccountNumberCheck.cpp.o CMakeFiles/Facade.dir/Sources/SecurityCodeCheck.cpp.o CMakeFiles/Facade.dir/Sources/FundsCheck.cpp.o CMakeFiles/Facade.dir/Sources/BankAccountFacade.cpp.o  -o Facade 

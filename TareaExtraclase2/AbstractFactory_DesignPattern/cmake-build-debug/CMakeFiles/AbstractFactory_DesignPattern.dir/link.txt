@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/AbstractFactory_DesignPattern.dir/main.cpp.o  -o AbstractFactory_DesignPattern 
