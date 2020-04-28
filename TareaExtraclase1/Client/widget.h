@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include "socket.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -16,9 +17,10 @@ public:
     ~Widget();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_Dijkstra_clicked();
 
 private:
+    Socket *client;
     Ui::Widget *ui;
 };
 #endif // WIDGET_H

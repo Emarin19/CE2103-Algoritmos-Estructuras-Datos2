@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/main.cpp" "/home/emanuel/Desktop/CE2103-Algoritmos-Estructuras-Datos2/TareaExtraclase1/Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.o"
+  "/home/emanuel/Desktop/Server/Graph.cpp" "/home/emanuel/Desktop/Server/cmake-build-debug/CMakeFiles/Server.dir/Graph.cpp.o"
+  "/home/emanuel/Desktop/Server/NodeG.cpp" "/home/emanuel/Desktop/Server/cmake-build-debug/CMakeFiles/Server.dir/NodeG.cpp.o"
+  "/home/emanuel/Desktop/Server/Socket.cpp" "/home/emanuel/Desktop/Server/cmake-build-debug/CMakeFiles/Server.dir/Socket.cpp.o"
+  "/home/emanuel/Desktop/Server/Vertex.cpp" "/home/emanuel/Desktop/Server/cmake-build-debug/CMakeFiles/Server.dir/Vertex.cpp.o"
+  "/home/emanuel/Desktop/Server/main.cpp" "/home/emanuel/Desktop/Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
